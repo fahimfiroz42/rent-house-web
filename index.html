@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +11,111 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <!-- font-family: "Manrope", sans-serif; -->
-
-    <script>
-        tailwind.config = {
-          theme: {
+<script>
+    tailwind.config = {
+        theme: {
             extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+                colors: {
+                    primary: 'rgb(171, 239, 95)',
+                    secondary: 'rgba(171, 239, 95, 0.5)',
+                    body: 'rgb(244, 244, 244)',
+                    h_dark: 'rgb(33, 33, 33)',
+                    p_dark:'rgb(73, 73, 73)',
+                    f_dark:'rgb(28, 28, 28)',
+                    p_light_dark:'rgb(115, 115, 115)',
+                     
+                },
+                fontFamily: {
+                    Manrope: 'Manrope',
+                },
+                
+            },
+        },
+    }
+</script>
+ </head>
+<body class="font-Manrope">
+
+<header class="bg-gradient-to-b from-orange-500 to-orange-200 container mx-auto" >
+    <!-- nav start -->
+    <nav>
+        <div class="navbar ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li ><a class="text-p_dark font-extrabold">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-2xl font-extrabold"><i class="ri-arrow-right-up-line bg-primary rounded-full px-1  font-medium"></i>Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-p_light_dark font-normal text-base">
+                <li ><a class="text-p_dark font-extrabold">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+                
+              </ul>
+            </div>
+            <div class="navbar-end space-x-2">
+                <i class="ri-search-line rounded-full text-2xl text-p_light_dark bg-white px-1"></i>
+
+                <i class="ri-shopping-cart-2-line rounded-full text-2xl text-p_light_dark bg-white px-1"></i>
+
+              <a class="btn bg-primary rounded-3xl text-f_dark text-xl font-extrabold ">Book Consult <i class="ri-arrow-right-up-line bg-f_dark rounded-full px-1 text-white font-medium"></i></a>
+            </div>
+          </div>
 
 
 
-</head>
-<body>
+    </nav>
+
+    <!-- nav end -->
+
+    <!-- banner start -->
+     <div class="">
+
+        <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content text-center">
+              <div class="max-w-7xl">
+                <img src="./assets/banner.png" alt="" class="mx-auto">
+                <h1 class="text-6xl font-extrabold text-h_dark">A barn house of this design has a striking appearance</h1>
+                <p class="py-6 text-p_dark text-base">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <button class="btn bg-secondary rounded-3xl text-xl font-bold">View Details <i class="ri-arrow-right-up-line bg-primary rounded-full px-1 font-medium"></i></button>
+              </div>
+            </div>
+          </div>
+
+
+
+     </div>
+
+
+</header>
+    
     
 </body>
 </html>
