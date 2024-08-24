@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
@@ -11,6 +11,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <!-- font-family: "Manrope", sans-serif; -->
+
+<style>
+  .back-color{
+    background:linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%); 
+  }
+  .back-img{
+    background-image: url(./assets/bg.jpg);
+  }
+</style>
 <script>
     tailwind.config = {
         theme: {
@@ -34,14 +43,45 @@
         },
     }
 </script>
+
+
+
  </head>
 <body class="font-Manrope">
 
-<header class="bg-gradient-to-b from-orange-500 to-orange-200 container mx-auto" >
+<header class="back-color w-full" >
     <!-- nav start -->
     <nav>
-        <div class="navbar ">
+        <div class="navbar container mx-auto ">
             <div class="navbar-start">
+             
+              <a class="btn btn-ghost text-2xl font-extrabold"><i class="ri-arrow-right-up-line bg-primary rounded-full px-1  font-medium"></i>Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-p_light_dark font-normal text-base">
+                <li ><a class="text-p_dark font-extrabold">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+                
+              </ul>
+            </div>
+            <div class="navbar-end space-x-2">
+                <i class="ri-search-line rounded-full text-2xl text-p_light_dark bg-white px-1 hidden lg:block"></i>
+
+                <i class="ri-shopping-cart-2-line rounded-full text-2xl text-p_light_dark bg-white px-1 hidden lg:block "></i>
+
+                <div class="hidden lg:block">
+                  <a class="btn bg-primary rounded-3xl text-f_dark text-xl font-extrabold  ">Book Consult <i class="ri-arrow-right-up-line bg-f_dark rounded-full px-1 text-white font-medium"></i></a>
+                </div>
+
+              
+              
+              <i class="ri-menu-line rounded-full text-2xl text-p_light_dark bg-white px-1 block lg:hidden"></i>
+
+
+              <!--           
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg
@@ -66,25 +106,7 @@
                 <li><a>Blogs</a></li>
                 <li><a>Contact Us</a></li>
                 </ul>
-              </div>
-              <a class="btn btn-ghost text-2xl font-extrabold"><i class="ri-arrow-right-up-line bg-primary rounded-full px-1  font-medium"></i>Rinterio</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-p_light_dark font-normal text-base">
-                <li ><a class="text-p_dark font-extrabold">Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-                
-              </ul>
-            </div>
-            <div class="navbar-end space-x-2">
-                <i class="ri-search-line rounded-full text-2xl text-p_light_dark bg-white px-1"></i>
-
-                <i class="ri-shopping-cart-2-line rounded-full text-2xl text-p_light_dark bg-white px-1"></i>
-
-              <a class="btn bg-primary rounded-3xl text-f_dark text-xl font-extrabold ">Book Consult <i class="ri-arrow-right-up-line bg-f_dark rounded-full px-1 text-white font-medium"></i></a>
+              </div> -->
             </div>
           </div>
 
@@ -118,29 +140,29 @@
 
 
 </header>
-<main class="">
+<main class=" bg-body">
 
 <!-- about us start -->
 
- <section class="my-32 bg-body container mx-auto relative">
+ <section class="my-32 bg-body w-full relative ">
 
-    <img src="./assets/Vector.png" alt="" class="absolute top-4 lg:visible">
+    <img src="./assets/Vector.png" alt="" class="absolute top-4 lg:block hidden">
 
     
-          <div class=" flex flex-col lg:flex-row gap-10  p-16 ">
+          <div class=" flex flex-col lg:flex-row gap-10 container mx-auto  p-10 lg:p-16 ">
 
 
            
-              <div class="space-y-5 ">
+              <div class="space-y-5 w-full lg:w-6/12   ">
                 
                 
-                <button class="bg-white p-2 rounded-3xl font-bold text-base text-h_dark"><i class="ri-arrow-right-line"></i>About Us</button>
+                <div class="flex justify-center lg:justify-start "><button class="bg-white p-2 rounded-3xl font-bold text-base  text-h_dark"><i class="ri-arrow-right-line"></i>About Us</button></div>
                 
     
-                <h1 class="text-5xl font-bold text-h_dark  ">We design thoughtful, <br> liveable spaces</h1>
+                <h1 class="text-5xl font-extrabold text-h_dark text-center lg:text-start  ">We design thoughtful  liveable spaces</h1>
     
-                <p class=" font-medium text-p_dark text-base">
-                  The barn house captivates with its blend of rustic charm and 
+                <p class=" font-medium text-p_dark text-base text-center lg:text-start ">
+                  The barn house captivates with its blend of  rustic charm and 
                    modern sophistication, featuring weathered wood, sleek metal accents.
                 </p>
                 <div class="card card-side bg-base-100 px-5 ">
@@ -173,10 +195,10 @@
                 
               </div>
 
-              <div class="">
+              <div class=" w-full lg:w-6/12  flex justify-end  ">
                 <img
                 src="./assets/Rectangle.png"
-                class="max-w-xl rounded-lg " />
+                class="  rounded-lg " />
               </div>
               
           </div>
@@ -189,11 +211,11 @@
 
 <!-- how we works  -->
 
-<section class="bg-body py-28 ">
+<section class="bg-body p-10 lg:p-28 ">
     <div class="text-center  space-y-4">
         <button class="bg-white p-2 rounded-3xl font-bold text-base text-h_dark"><i class="ri-arrow-right-line"></i>How we works</button>
-        <h1 class="font-bold text-4xl text-h_dark">Our Works Process</h1>
-        <p class="text-p_dark font-medium text-base  ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <h1 class="font-extrabold text-4xl text-h_dark">Our Works Process</h1>
+        <p class="text-p_dark font-medium text-base  ">The barn house captivates with its blend of rustic charm and  modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
     </div>
 
     <!-- card -->
@@ -203,7 +225,7 @@
          <div class="bg-[#E7C1D3] p-5 rounded-xl  space-y-3">
             <img src="./assets/concept.png" alt="">
             <h1 class="text-xl font-extrabold text-f_dark">Concept</h1>
-            <p class="text-base font-medium ">The barn house captivates with its blend of rustic charm and modern.</p>
+            <p class="text-base font-medium ">The barn house captivates with its  blend of rustic charm and modern.</p>
 
          </div>
    <!-- card2 -->
@@ -232,25 +254,25 @@
 </section>
 
 <!-- explore our latest work -->
- <section class="my-28">
+ <section class=" p-4 lg:p-28 bg-white">
 
     <div class="text-center  space-y-4">
         <button class="bg-secondary p-2 rounded-3xl font-bold text-base text-h_dark"><i class="ri-arrow-right-line"></i>Our Latest Portfolio</button>
-        <h1 class="font-bold text-4xl text-h_dark">Our Works Process</h1>
-        <p class="text-p_dark font-medium text-base  ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <h1 class="font-extrabold text-4xl text-h_dark">Our Works Process</h1>
+        <p class="text-p_dark font-medium text-base  ">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
     </div>
 
     <!-- card section -->
      <div class="grid grid-cols-1 lg:grid-cols-8  gap-6 mt-10">
         <!-- card1 -->
-         <div class=" border rounded-2xl p-4 col-span-5">
-            <div class=" bg-base-100 flex gap-6  ">
-                <figure class="">
+         <div class=" border rounded-2xl p-4 lg:col-span-5">
+            <div class=" bg-base-100 flex gap-6 flex-col lg:flex-row  ">
+                <figure class="lg:w-6/12 w-full">
                   <img
                     src="./assets/img1.png"
-                    alt="" / class="max-w-xl">
+                    alt="" / class=" w-full">
                 </figure>
-                <div class="space-y-6">
+                <div class="space-y-7 lg:w-6/12 w-full">
                   <h2 class=" text-2xl font-extrabold text-p_dark">Commercial</h2>
                   <p class="font-medium tex-p_light_dark text-base">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                   <h1 class="text-xl font-extrabold text-h_dark"> View Details <i class="ri-arrow-right-up-line bg-primary rounded-full p-1 text-2xl font-medium ml-2"></i></h1>
@@ -260,24 +282,24 @@
          </div>
 
          <!-- card2 -->
-           <div class="border rounded-2xl p-4 col-span-3 flex justify-center ">
-            <img src="./assets/img2.png" alt="" class="" >
+           <div class="border rounded-2xl p-4 lg:col-span-3 flex justify-center  ">
+            <img src="./assets/img2.png" alt="" class="w-full" >
            </div>
 
         <!-- card3 -->
-         <div class="border rounded-2xl p-4 col-span-2 flex justify-center">
-            <img src="./assets/img3.png" alt="">
+         <div class="border rounded-2xl p-4 lg:col-span-2 flex justify-center">
+            <img src="./assets/img3.png" alt="" class="w-full">
          </div>
 
          <!-- card4 -->
-         <div class=" border rounded-2xl p-4 col-span-4">
-            <div class=" bg-base-100 flex gap-6  ">
-                <figure class="">
+         <div class=" border rounded-2xl p-4 lg:col-span-4">
+            <div class=" bg-base-100 flex gap-6 flex-col lg:flex-row  ">
+                <figure class="lg:w-6/12 w-full">
                   <img
                     src="./assets/img4.png"
-                    alt="" / class="max-w-xl">
+                    alt="" / class="w-full">
                 </figure>
-                <div class="space-y-6">
+                <div class="space-y-6 lg:w-6/12 w-full">
                   <h2 class=" text-2xl font-extrabold text-p_dark">Commercial</h2>
                   <p class="font-medium tex-p_light_dark text-base">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                   <h1 class="text-xl font-extrabold text-h_dark"> View Details <i class="ri-arrow-right-up-line bg-primary rounded-full p-1 text-2xl font-medium ml-2"></i></h1>
@@ -287,9 +309,13 @@
          </div>
 
          <!-- card5 -->
-          <div class="border rounded-2xl p-4 col-span-2 flex justify-center">
-            <img src="./assets/img5.png" alt="">
+          <div class="border rounded-2xl p-4 lg:col-span-2 flex justify-center">
+            <img src="./assets/img5.png" alt="" class="w-full">
           </div>
+<!-- card6 -->
+<div class="border rounded-2xl p-4  flex justify-center lg:hidden block">
+  <img src="./assets/img3.png" alt="" class="w-full">
+</div>
 
 
 
@@ -306,12 +332,12 @@
 
 <!-- Rent news section -->
 
-<section class="bg-body py-28 ">
+<section class="bg-body p-10  lg:p-28 ">
 
     <div class="text-center  space-y-4">
         <button class="bg-secondary p-2 rounded-3xl font-bold text-base text-h_dark"><i class="ri-arrow-right-line"></i>Rinterio News</button>
-        <h1 class="font-bold text-4xl text-h_dark">Read Our Articles and News</h1>
-        <p class="text-p_dark font-medium text-base  ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <h1 class="font-extrabold text-4xl text-h_dark">Read Our Articles and News</h1>
+        <p class="text-p_dark font-medium text-base  ">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
     </div>
 
     <!-- card section -->
@@ -322,7 +348,7 @@
               <img
                 src="./assets/article1.png"
                 alt="Shoes"
-                class="rounded-xl" />
+                class="rounded-xl w-full" />
             </figure>
             <div class="card-body  ">
               <p class="text-sm font-medium text-p_light_dark"><i class="ri-calendar-2-line"></i>July14, 2024 <span class="ml-2"><i class="ri-shield-user-line"></i> By Admin</span></p>
@@ -340,7 +366,7 @@
               <img
                 src="./assets/article1.png"
                 alt="Shoes"
-                class="rounded-xl" />
+                class="rounded-xl w-full" />
             </figure>
             <div class="card-body  ">
               <p class="text-sm font-medium text-p_light_dark"><i class="ri-calendar-2-line"></i>July14, 2024 <span class="ml-2"><i class="ri-shield-user-line"></i> By Admin</span></p>
@@ -358,7 +384,7 @@
               <img
                 src="./assets/article1.png"
                 alt="Shoes"
-                class="rounded-xl" />
+                class="rounded-xl w-full" />
             </figure>
             <div class="card-body  ">
               <p class="text-sm font-medium text-p_light_dark"><i class="ri-calendar-2-line"></i>July14, 2024 <span class="ml-2"><i class="ri-shield-user-line"></i> By Admin</span></p>
@@ -384,22 +410,24 @@
 
 
 <!-- lets connect section -->
- <section class="bg-url('./assets/bg.jpg') py-28">
+ <section class=" back-img bg-cover p-10 lg:px-56 lg:py-28">
+  
 
-    <div class="text-center  space-y-4">
+
+    <div class="text-center  space-y-4  ">
         <button class="bg-secondary p-2 rounded-3xl font-bold text-base text-h_dark"><i class="ri-arrow-right-line"></i>Let’s Connect</button>
         <h1 class="font-bold text-4xl text-h_dark">Let’s Discuss Next Project</h1>
-        <p class="text-p_dark font-medium text-base  ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <p class="text-p_dark font-medium text-base  ">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
     </div>
 
     <!-- form section -->
 
-    <div class=" grid grid-cols-2 gap-6 mt-10 ">
+    <div class="  grid grid-cols-1 lg:grid-cols-2  g gap-6 mt-10 ">
         <input type="text" placeholder="First Name*" class="input input-bordered rounded-3xl " />
         <input type="text" placeholder="Last Name*" class="input input-bordered rounded-3xl " />
         <input type="text" placeholder="Phone Number*" class="input input-bordered rounded-3xl " />
         <input type="text" placeholder="Email Number*" class="input input-bordered  rounded-3xl " />
-        <input type="text" placeholder="Write your message here" class="input input-bordered w-full col-span-2 rounded-3xl   " /><br>
+        <input type="text" placeholder="Write your message here" class="input input-bordered w-full lg:col-span-2 rounded-3xl   " /><br>
         <button class="btn bg-primary rounded-3xl text-f_dark text-xl font-extrabold col-span-2 ">Send Mail <i class="ri-arrow-right-up-line bg-f_dark rounded-full px-1 text-white font-medium"></i></button>
 
 
@@ -423,7 +451,7 @@
           <p class="font-medium text-base text-p_light_dark">
             The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.
           </p>
-          <ul class="menu menu-horizontal px-1 text-f_secondary  font-normal text-base space-x-10">
+          <ul class="flex flex-col lg:flex-row px-1 text-f_secondary  font-normal text-base space-x-10">
             <li ><a class="font-medium">Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
