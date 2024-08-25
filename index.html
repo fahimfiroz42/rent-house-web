@@ -10,16 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<!-- font-family: "Manrope", sans-serif; -->
 
-<style>
-  .back-color{
-    background:linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%); 
-  }
-  .back-img{
-    background-image: url(./assets/bg.jpg);
-  }
-</style>
+
+
 <script>
     tailwind.config = {
         theme: {
@@ -49,7 +42,7 @@
  </head>
 <body class="font-Manrope">
 
-c<header class="back-color w-full" >
+<header class="bg-gradient-to-t from-white to-gray-200  w-full" >
     <!-- nav start -->
     <nav>
         <div class="navbar container mx-auto ">
@@ -564,7 +557,7 @@ c<header class="back-color w-full" >
 
 
 <!-- lets connect section -->
- <section class=" back-img bg-cover p-10 lg:px-56 lg:py-28">
+ <section class=" bg-[url('./assets/bg.jpg')] bg-cover p-10 lg:px-56 lg:py-28">
   
 
 
@@ -576,13 +569,13 @@ c<header class="back-color w-full" >
 
     <!-- form section -->
 
-    <div class="  grid grid-cols-1 lg:grid-cols-2  g gap-6 mt-10 ">
+    <div class="  grid grid-cols-1 lg:grid-cols-2  gap-6 mt-10 ">
         <input type="text" placeholder="First Name*" class="input input-bordered rounded-3xl " />
         <input type="text" placeholder="Last Name*" class="input input-bordered rounded-3xl " />
         <input type="text" placeholder="Phone Number*" class="input input-bordered rounded-3xl " />
         <input type="text" placeholder="Email Number*" class="input input-bordered  rounded-3xl " />
-        <input type="text" placeholder="Write your message here" class="input input-bordered w-full lg:col-span-2 rounded-3xl   " /><br>
-        <button class="btn bg-primary rounded-3xl text-f_dark text-xl font-extrabold col-span-2 ">Send Mail <i class="ri-arrow-right-up-line bg-f_dark rounded-full px-1 text-white font-medium"></i></button>
+        <input type="text" placeholder="Write your message here" class="input input-bordered w-full h-28 placeholder: lg:col-span-2 rounded-3xl   " /><br>
+        <button class="btn bg-primary rounded-3xl text-f_dark text-xl font-extrabold lg:col-span-2 ">Send Mail <i class="ri-arrow-right-up-line bg-f_dark rounded-full px-1 text-white font-medium"></i></button>
 
 
     </div>
@@ -605,7 +598,7 @@ c<header class="back-color w-full" >
           <p class="font-medium text-base text-p_light_dark">
             The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.
           </p>
-          <ul class="flex flex-col lg:flex-row px-1 text-f_secondary  font-normal text-base space-x-10">
+          <ul class="flex flex-col lg:flex-row px-1 text-f_secondary  font-normal text-base lg:space-x-10 space-y-4 ">
             <li ><a class="font-medium">Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
