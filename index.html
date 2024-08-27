@@ -11,6 +11,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+<style>
+  .bg-opacity{
+    opacity: 0.5;
+  }
+
+  
+</style>
+
 
 
 <script>
@@ -65,9 +73,9 @@
 
                 <i class="ri-shopping-cart-2-line rounded-full text-2xl text-p_light_dark bg-white px-2 py-1  hidden lg:block "></i>
 
-                <div class="hidden lg:block">
-                  <a class="btn bg-primary rounded-3xl text-f_dark text-xl font-extrabold border-none  ">Book Consult <i class="ri-arrow-right-up-line bg-f_dark rounded-full px-1 text-white font-medium"></i></a>
-                </div>
+                
+                  <button class="btn bg-primary rounded-3xl text-f_dark text-xl font-extrabold border-none hidden lg:block ">Book Consult <i class="ri-arrow-right-up-line bg-f_dark rounded-full p-2 text-white font-medium"></i></button>
+               
 
               
               
@@ -117,7 +125,7 @@
     <img src="./assets/Vector.png" alt="" class="absolute top-4 lg:block hidden">
 
     
-          <div class=" flex flex-col lg:flex-row gap-10 container mx-auto  p-10 lg:p-16 ">
+          <div class=" flex flex-col lg:flex-row gap-10 w-11/12 mx-auto  p-10 lg:p-16  ">
 
 
            
@@ -162,7 +170,7 @@
                 
               </div>
 
-              <div class=" w-full lg:w-6/12  flex justify-end  ">
+              <div class=" w-full lg:w-6/12  flex justify-end md:justify-center  ">
                 <img
                 src="./assets/Rectangle.png"
                 class="  rounded-lg " />
@@ -178,15 +186,15 @@
 
 <!-- how we works  -->
 
-<section class="bg-body p-10 lg:px-28 lg:pb-28  container mx-auto ">
-    <div class="text-center  space-y-4">
+<section class="bg-body p-10 lg:px-28 lg:pb-28  ">
+    <div class="text-center  space-y-4 w-9/12 mx-auto  ">
         <button class="bg-white p-2 rounded-3xl font-bold text-base text-h_dark"><i class="ri-arrow-right-line"></i>How we works</button>
         <h1 class="font-extrabold text-4xl text-h_dark">Our Works Process</h1>
-        <p class="text-p_dark font-medium text-base  ">Our work process is very unique.You can see  the work process <br> in the step by step solution.</p>
+        <p class="text-p_dark font-medium text-base  ">Our work process is very unique.You can see  the work process in the step by step solution.</p>
     </div>
 
     <!-- card -->
-     <div class=" grid grid-cols-1 lg:grid-cols-4 gap-10 mt-10">
+     <div class=" grid grid-cols-1 lg:grid-cols-4 gap-10 mt-10 w-11/12 mx-auto">
 
         <!-- card1 -->
          <div class="bg-[#E7C1D3] p-5 rounded-xl  space-y-3">
@@ -221,23 +229,23 @@
 </section>
 
 <!-- explore our latest work -->
- <section class=" p-4 lg:p-28 lg:bg-white container mx-auto ">
+ <section class=" p-4 lg:p-28 lg:bg-white  ">
 
-    <div class="text-center  space-y-4 w-6/12 mx-auto">
+    <div class="text-center  space-y-4 w-9/12 mx-auto">
         <button class="bg-secondary p-2 rounded-3xl font-bold text-base text-h_dark"><i class="ri-arrow-right-line"></i>Explore our Latest works</button>
         <h1 class="font-extrabold text-4xl text-h_dark">Our Latest Portfolio</h1>
         <p class="text-p_dark font-medium text-base  ">Find our latest working progess. View our modern design and destination updates.</p>
     </div>
 
     <!-- card section -->
-     <div class="grid grid-cols-1 lg:grid-cols-8  gap-6 mt-10">
+     <div class="grid grid-cols-1 lg:grid-cols-8  gap-6 mt-10 w-11/12 mx-auto">
         <!-- card1 -->
          <div class=" border rounded-2xl bg-white p-4 lg:col-span-5 ">
             <div class=" bg-base-100 flex gap-6 flex-col lg:flex-row  ">
                 <figure class="lg:w-6/12 w-full">
                   <img
                     src="./assets/img1.png"
-                    alt="" / class=" w-full">
+                    alt="" / class=" w-full object-cover">
                 </figure>
                 <div class="space-y-7 lg:w-6/12 w-full">
                   <h2 class=" text-2xl font-extrabold text-p_dark">Commercial</h2>
@@ -250,12 +258,12 @@
 
          <!-- card2 -->
            <div class="border rounded-2xl bg-white  p-4 lg:col-span-3 flex justify-center  ">
-            <img src="./assets/img2.png" alt="" class="w-full" >
+            <img src="./assets/img2.png" alt="" class="w-full object-cover rounded-2xl" >
            </div>
 
         <!-- card3 -->
          <div class="border rounded-2xl bg-white  p-4 lg:col-span-2 flex justify-center">
-            <img src="./assets/img3.png" alt="" class="w-full">
+            <img src="./assets/img3.png" alt="" class="w-full object-cover rounded-2xl">
          </div>
 
          <!-- card4 -->
@@ -264,11 +272,11 @@
                 <figure class="lg:w-6/12 w-full">
                   <img
                     src="./assets/img4.png"
-                    alt="" / class="w-full">
+                    alt="" / class="w-full object-cover rounded-2xl">
                 </figure>
                 <div class="space-y-6 lg:w-6/12 w-full">
                   <h2 class=" text-2xl font-extrabold text-p_dark">Commercial</h2>
-                  <p class="font-medium tex-p_light_dark text-base">Most of the time we build and design for commercial space.Here you find the details information.Our commercial space are Business class.</p>
+                  <p class="font-medium tex-p_light_dark text-base">Most of the time we build and design for commercial space.Here you find the details information.</p>
                   <h1 class="text-xl font-extrabold text-h_dark"> View Details <i class="ri-arrow-right-up-line bg-primary rounded-full p-1 text-2xl font-medium ml-2"></i></h1>
                 </div>
               </div>
@@ -277,11 +285,11 @@
 
          <!-- card5 -->
           <div class="border rounded-2xl p-4 bg-white  lg:col-span-2 flex justify-center ">
-            <img src="./assets/img5.png" alt="" class="w-full">
+            <img src="./assets/img5.png" alt="" class="w-full object-cover rounded-2xl">
           </div>
 <!-- card6 -->
 <div class="border rounded-2xl bg-white  p-4  flex justify-center lg:hidden block">
-  <img src="./assets/img3.png" alt="" class="w-full">
+  <img src="./assets/img3.png" alt="" class="w-full object-cover rounded-2xl">
 </div>
 
 
@@ -376,7 +384,7 @@
 </section>
 
 <!-- what our clients say -->
-<section class=" pt-16 bg-white ">
+<section class=" pt-16 bg-white  ">
   <div class="text-center  space-y-4 lg:w-6/12 mx-auto">
     <button class="bg-secondary p-2 rounded-3xl font-bold text-base text-h_dark"><i class="ri-arrow-right-line"></i>Client Feedbacks</button>
     <h1 class="font-extrabold text-4xl text-h_dark">What Our Client Say</h1>
@@ -552,7 +560,7 @@
 
         <textarea class="textarea textarea-bordered lg:col-span-2 h-28 rounded-3xl placeholder:text-base" placeholder="Write your message here"></textarea>
         <br>
-        <button class="btn bg-primary rounded-3xl text-f_dark text-xl font-extrabold lg:col-span-2 ">Send Mail <i class="ri-arrow-right-up-line bg-f_dark rounded-full px-1 text-white font-medium"></i></button>
+        <button class="btn bg-primary rounded-3xl text-f_dark text-xl font-extrabold lg:col-span-2 border-none ">Send Mail <i class="ri-arrow-right-up-line bg-f_dark rounded-full px-1 text-white font-medium"></i></button>
 
 
     </div>
